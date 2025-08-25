@@ -1,6 +1,6 @@
+import 'package:drama_flix/common/utils/prefs_helper.dart';
 import 'package:drama_flix/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class LocaleProvider with ChangeNotifier {
   static const String _localeKey = 'languageCode';
@@ -11,8 +11,7 @@ class LocaleProvider with ChangeNotifier {
   Locale get locale => _locale;
 
   static Future<LocaleProvider> create() async {
-    final prefs = await SharedPreferences.getInstance();
-    final String? savedLocaleCode = prefs.getString(_localeKey);
+    final String? savedLocaleCode = PrefsHelper.getLocaleCode(_localeKey);
     final supportedLanguageCodes = AppLocalizations.supportedLocales
         .map((l) => l.languageCode)
         .toList();
@@ -30,8 +29,7 @@ class LocaleProvider with ChangeNotifier {
   void setLocale(Locale newLocale) async {
     if (_locale == newLocale) return;
     _locale = newLocale;
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setString(_localeKey, newLocale.languageCode);
+    PrefsHelper.setLocaleCode(_localeKey, newLocale.languageCode);
     notifyListeners();
   }
 }

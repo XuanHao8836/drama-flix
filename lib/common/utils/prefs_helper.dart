@@ -12,4 +12,11 @@ class PrefsHelper {
   static bool getHasSeenOnboarding() {
     return _prefs.getBool(PrefsConstants.hasSeenOnboarding) ?? false;
   }
+
+  static String? getLocaleCode(String localeKey ) {
+    return _prefs.getString(localeKey);
+  }
+  static  setLocaleCode(String localeKey ,String value) {
+    return _prefs.setString(localeKey , value);
+  }
 }

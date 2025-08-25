@@ -4,10 +4,6 @@ import 'package:drama_flix/common/utils/prefs_helper.dart';
 import 'package:drama_flix/feature/bottom_nav/presentation/bloc/bottom_nav_cubit.dart';
 import 'package:drama_flix/feature/home/presentation/bloc/home_cubit.dart';
 import 'package:drama_flix/feature/login/presentation/bloc/auth_cubit.dart';
-import 'package:drama_flix/feature/login/presentation/bloc/auth_state.dart';
-import 'package:drama_flix/feature/login/presentation/pages/login_page.dart';
-import 'package:drama_flix/feature/main/presentation/pages/main_page.dart';
-import 'package:drama_flix/feature/profile/presentation/bloc/location_cubit.dart';
 import 'package:drama_flix/feature/splash/presentation/bloc/splash_cubit.dart';
 import 'package:drama_flix/feature/splash/presentation/pages/splash_page.dart';
 import 'package:drama_flix/firebase_options.dart';
@@ -62,7 +58,7 @@ class MyApp extends StatelessWidget {
                 ],
                 supportedLocales: AppLocalizations.supportedLocales,
                 locale: localeProvider.locale,
-                home: const MainPage(),
+                home: const SplashPage(),
               ),
             );
           },

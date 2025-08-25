@@ -53,7 +53,7 @@ Widget _buildProfileHeader(AppLocalizations appLocalizations, User? user) {
   return Row(
     children: [
       CircleAvatar(
-        radius: 20,
+        radius: 30,
         backgroundColor: Colors.transparent,
         child: switch (user?.avatar) {
           final url? => CachedNetworkImage(
