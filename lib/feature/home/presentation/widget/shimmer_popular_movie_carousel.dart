@@ -1,6 +1,5 @@
 import 'package:drama_flix/common/widgets/shimmer_loading_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:shimmer/shimmer.dart';
 
 class ShimmerPopularMovieCarousel extends StatelessWidget {
   final int itemCount;
@@ -36,7 +35,7 @@ class ShimmerPopularMovieCarousel extends StatelessWidget {
               itemCount: itemCount,
               itemBuilder: (context, index) {
                 double currentPageValue =
-                pageController.hasClients && pageController.page != null
+                    pageController.hasClients && pageController.page != null
                     ? pageController.page!
                     : 1.0;
                 double distance = (index - currentPageValue).abs();
@@ -45,8 +44,10 @@ class ShimmerPopularMovieCarousel extends StatelessWidget {
                 if (scale < 0.85) scale = 0.85;
 
                 return Padding(
-                  padding:
-                  const EdgeInsets.symmetric(horizontal: 8.0, vertical: 16.0),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 8.0,
+                    vertical: 16.0,
+                  ),
                   child: Transform.scale(
                     scale: scale,
                     child: Container(

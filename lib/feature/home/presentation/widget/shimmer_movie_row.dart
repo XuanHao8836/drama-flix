@@ -1,6 +1,5 @@
 import 'package:drama_flix/common/widgets/shimmer_loading_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:shimmer/shimmer.dart';
 
 class ShimmerMovieRow extends StatelessWidget {
   const ShimmerMovieRow({super.key});
