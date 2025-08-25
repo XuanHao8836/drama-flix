@@ -30,7 +30,7 @@ class ShimmerPopularMovieCarousel extends StatelessWidget {
           const SizedBox(height: 8),
 
           SizedBox(
-            height: 320,
+            height: 250,
             child: PageView.builder(
               controller: pageController,
               itemCount: itemCount,

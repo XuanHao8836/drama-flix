@@ -9,7 +9,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 class HomeCubit extends Cubit<HomeState> {
 
   final PageController pageController =
-  PageController(viewportFraction: 0.7, initialPage: 1);
+  PageController(viewportFraction: 0.7, initialPage: 0);
   final ScrollController scrollController = ScrollController();
   final ValueNotifier<Color> appBarColor = ValueNotifier<Color>(Colors.transparent);
 
