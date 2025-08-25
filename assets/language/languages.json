@@ -1,0 +1,19 @@
+{
+  "language": {
+    "name": {
+      "ar_AE": "العربية",
+      "de_DE": "Deutsch",
+      "en_US": "English",
+      "es_ES": "Español",
+      "fr_FR": "Français",
+      "id_ID": "Bahasa Indonesia",
+      "ja_JP": "日本語",
+      "ko_KR": "한국어",
+      "pt_BR": "Português",
+      "th_TH": "ภาษาไทย",
+      "tr_TR": "Türkçe",
+      "vi_VN": "Tiếng Việt",
+      "zh_TW": "中文"
+    }
+  }
+}

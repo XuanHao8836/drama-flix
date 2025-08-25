@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "21578863766",
+    "project_id": "drama-flix-85736",
+    "storage_bucket": "drama-flix-85736.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21578863766:android:d98a71c0a287ae5e231eb7",
+        "android_client_info": {
+          "package_name": "com.haonx8836.drama_flix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "21578863766-7tig18g0pi30chqtq403869alafqu017.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.haonx8836.drama_flix",
+            "certificate_hash": "bcad2f338460c9dabb49cae12500bf34d4576e3d"
+          }
+        },
+        {
+          "client_id": "21578863766-grdr1jrm6civge26t0skn9i4u8kd4ohq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjCnThycqMC8vf9XeKXFbG6gemEUu8M4M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "21578863766-grdr1jrm6civge26t0skn9i4u8kd4ohq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
